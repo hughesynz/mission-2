@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="mission1-contact.css" />
+        <title>Contact Us</title>
+    </head>
+    <body>
+        <!-- Page Header -->
+        <header>
+            <h1>Contact Us</h1>
+        </header>
+
+        <!-- Navigation Options -->
+        <nav>
+            <a href="mission1.html">Home</a>
+            <a href="mission1-contact.html">Contact</a>
+        </nav>
+
+        <main>
+            <!-- Form for customers to complete and return any enquiries -->
+            <div>
+                <p>Fill out the form below to send us a message. We will respond as soon as possible.</p>
+                <form action="mailto:someone@example.com" method="post">
+                    <label>Name:</label><input type="text" name="name" /><br />
+                    <label>Email:</label><input type="email" name="email" /><br />
+                    <br />
+                    <label>Subject:</label><br><input type="radio" id="Sales" value="Sales" name="subject"/><label>Sales</label><br />
+                    <input type="radio" id="Support" value="Support" name="subject"/><label>Support</label><br />
+                    <input type="radio" id="Other" value="Other" name="subject"/><label>Other</label><br />
+                    <br />
+                    <label>Message:</label><br>
+                    <textarea placeholder="type your message here..."></textarea><br />
+                    <br />
+                    <input type="submit" value="Submit" />
+                </form>
+            </div>
+        </main>
+        <!-- Footer -->
+        <footer>
+            <h3>Copyright 2026 by Bob (Smith). All rights reserved.</h3>
+        </footer>
+    </body>
+</html>

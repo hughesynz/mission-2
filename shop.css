@@ -1,0 +1,110 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Style all labels */
+label {
+  font-family: Tahoma, sans-serif;
+  padding: 10px;
+}
+
+/* Add a border to the textarea */
+textarea {
+  border: 2px solid black;
+}
+
+/* Style the input fields */
+input[type="text"],
+input[type="email"] {
+  padding: 2px, 2px;
+  margin: 12px, 0px;
+  border-style: solid;
+  border-color: black;
+}
+
+/* Add a set width to the radio buttons */
+input[type="radio"] {
+  width: 20px;
+}
+
+/* Add a set width to the submit button */
+input[type="submit"] {
+  width: 15%;
+}
+
+/* Style the body */
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: Arial;
+  margin: 0px;
+  background-color: rgb(203, 217, 243);
+  min-height: 100vh;
+}
+
+/* Header logo or title */
+header {
+  padding: 60px;
+  text-align: center;
+  background-color: rgb(161, 185, 230);
+}
+
+/* Style navbar as flexbox */
+nav {
+  display: flex;
+  background-color: #333;
+  text-align: center;
+  justify-content: center;
+}
+
+/* Style navigation bar links */
+nav a {
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+}
+
+/* Change colour on hover */
+nav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+main {
+  flex-grow: 1;
+}
+
+/* Add padding and margin to div to bring content away from the edge of the page */
+div {
+  padding: 10px;
+  margin: 5px;
+}
+
+#total-cost {
+  padding: 10px;
+  margin: 5px;
+}
+
+#add-items {
+  margin: 15px;
+}
+
+/* Footer */
+footer {
+  padding: 20px;
+  text-align: center;
+  background-color: rgb(161, 185, 230);
+  align-content: end;
+  position: relative;
+}
+
+/* === Media Queries === */
+
+/* Rotate nav bar to a column when media display size meets defined criteria */
+@media screen and (max-width: 768px) {
+  nav,
+  main {
+    flex-direction: column;
+  }
+}

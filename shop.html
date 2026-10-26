@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop</title>
+    <link rel="stylesheet" href="shop.css" />
+    <script defer src="shopScript.js"></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <h1>Bob's Brilliant Axes</h1>
+      <h4>
+        <i
+          >We've chopped our prices even more, so you can chop even more
+          trees!</i
+        >
+      </h4>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+      <a href="home.html">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <!-- Contents -->
+    <main>
+      <!-- Each item listed -->
+      <div>
+        <img src="bronze.png" alt="bronze" />
+        <label
+          >Bronze hatchets are simple but effective, if you are new to
+          woodcutting then this is a great place to start.</label
+        >
+        <button id="plus-bronze" onclick="addToCart('Bronze Hatchet', 0)">+</button>
+      </div>
+      <div>
+        <img src="Iron.png" alt="iron" />
+        <label
+          >Iron hatchets are a step up for bronze, but still worth using once
+          you've got a bit of experience.</label
+        >
+        <button id="plus-iron" onclick="addToCart('Iron Hatchet', 1260)" >+</button>
+      </div>
+      <div>
+        <img src="steel.png" alt="steel" />
+        <label
+          >Steel hatchets are for once you've got a bit more practice. Much more
+          effective than iron or bronze, especially for felling larger
+          trees.</label
+        >
+        <button id="plus-steel" onclick="addToCart('Steel Hatchet', 1680)">+</button>
+      </div>
+      <div>
+        <img src="mithril.png" alt="mithril" />
+        <label
+          >Mithril hatchets are of a fine quality, but require much more skill
+          to use them effectively. Great for intermediate woodcutters.</label
+        >
+        <button id="plus-mithril" onclick="addToCart('Mithril Hatchet', 2510)">+</button>
+      </div>
+      <div class="cart">
+        <label>Items currently in cart: </label>
+        <ul id="cart-items"></ul>
+        </ul>
+        <span id="total-cost">None!</span>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <h3>Copyright 2026 by Bob (Smith). All rights reserved.</h3>
+    </footer>
+  </body>
+</html>
